@@ -72,11 +72,11 @@
             android:layout_alignBaseline="@+id/caixaFoneCodigoDddId"
             android:layout_alignBottom="@+id/caixaFoneCodigoDddId"
             android:layout_toEndOf="@+id/caixaFoneCodigoDddId"
-            android:hint="9 8888-7777"
+            android:hint="98888-7777"
             android:textColor="@color/textColorPrimary" />
 
         <Button
-            android:id="@+id/btn"
+            android:id="@+id/btnCadastrarId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/caixaFoneCodigoPaisId"
