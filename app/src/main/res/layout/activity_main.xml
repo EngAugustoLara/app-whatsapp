@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="app.ctrlsoftware.com.whatsapp.MainActivity">
+    tools:context="app.ctrlsoftware.com.whatsapp.activity.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
