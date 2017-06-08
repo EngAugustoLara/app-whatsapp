@@ -2,6 +2,7 @@ package app.ctrlsoftware.com.whatsapp.activity;
 
 import android.Manifest;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -95,6 +96,14 @@ public class LoginActivity extends AppCompatActivity {
                 //Envio de SMS
                 //telefoneSemFormatacao = "5554";
                 boolean enviadoSMS = enviaSMS("+" +telefoneSemFormatacao, mensagemEnvio);
+
+                if (enviadoSMS) {
+                    Intent intent = new Intent(LoginActivity.this, ValidadorActivity.class);
+                    startActivity(intent);
+                    finish();
+                } else{
+                    Toast.makeText(LoginActivity.this, "Problema ao enviar a SMS, tente novamente", Toast.LENGTH_SHORT).show();
+                }
 
                 /*
                 HashMap<String, String> usuario = preferencias.getDadosUsuario();
