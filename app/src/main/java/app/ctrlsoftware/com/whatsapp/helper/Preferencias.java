@@ -13,13 +13,14 @@ public class Preferencias {
 
     private Context contexto;
     private SharedPreferences preferences;
+    private final String NOME_ARQUIVO = "whatsapp.preferencias";
+    private final int MODE = 0;
     private SharedPreferences.Editor editor;
 
     private final String CHAVE_NOME = "nome";
     private final String CHAVE_TELEFONE ="telefone";
     private final String CHAVE_TOKEN = "token";
-    private final String NOME_ARQUIVO = "whatsapp.preferencias";
-    private final int MODE = 0;
+
 
     public Preferencias(Context contextoParametro){
 

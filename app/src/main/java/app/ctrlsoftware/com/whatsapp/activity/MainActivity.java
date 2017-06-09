@@ -7,16 +7,15 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import app.ctrlsoftware.com.whatsapp.R;
+import app.ctrlsoftware.com.whatsapp.config.ConfiguracaoFirebase;
 
 public class MainActivity extends AppCompatActivity {
 
-    private DatabaseReference referenciaFirebase = FirebaseDatabase.getInstance().getReference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        referenciaFirebase.child("pontos").setValue(100);
     }
 }

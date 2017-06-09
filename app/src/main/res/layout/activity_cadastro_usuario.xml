@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context="app.ctrlsoftware.com.whatsapp.activity.LoginActivity">
+    tools:context="app.ctrlsoftware.com.whatsapp.activity.CadastroUsuarioActivity"
+    android:background="@color/colorPrimary">
+
 
     <RelativeLayout
         android:layout_width="344dp"
@@ -16,65 +17,67 @@
         android:layout_marginTop="8dp"
         android:gravity="center_vertical|center_horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="@dimen/largura_logo"
-            android:layout_height="@dimen/altura_logo"
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="113dp"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
-            app:srcCompat="@drawable/logo" />
+            android:layout_marginTop="12dp"
+            app:srcCompat="@drawable/usuario" />
 
         <EditText
-            android:id="@+id/editEmailId"
+            android:id="@+id/editCadNomeId"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView2"
+            android:layout_below="@+id/imageView"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="32dp"
+            android:layout_marginTop="44dp"
             android:ems="10"
-            android:hint="@string/login_email"
+            android:hint="@string/cad_nome"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:id="@+id/editCadEmailId"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editCadNomeId"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/cad_email"
             android:inputType="textEmailAddress"
             android:textAlignment="center"
             android:textColor="#ffffff" />
 
         <EditText
-            android:id="@+id/editSenhaId"
+            android:id="@+id/editCadSenhaId"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editCadEmailId"
+            android:layout_marginTop="10dp"
             android:ems="10"
-            android:hint="@string/login_senha"
+            android:hint="@string/cad_senha"
             android:inputType="textPassword"
-            android:textAlignment="center"
-            android:textColor="#ffffff" />
+            android:textAlignment="center" />
 
         <Button
-            android:id="@+id/btnLogarId"
+            android:id="@+id/btnCadastrarId"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editSenhaId"
+            android:layout_below="@+id/editCadSenhaId"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="27dp"
+            android:layout_marginTop="28dp"
             android:background="@color/colorPrimaryDark"
-            android:text="@string/btn_logar"
+            android:text="@string/btn_cadastrar"
             android:textColor="#ffffff" />
-
-        <TextView
-            android:id="@+id/txtCadastrarId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/btnLogarId"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="31dp"
-            android:text="@string/text_cadastre_se"
-            android:textColor="#ffffff"
-            android:onClick="abrirCadastroUsuario"/>
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

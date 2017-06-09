@@ -1,9 +1,20 @@
 <resources>
     <string name="app_name">WhatsApp</string>
     <string name="cad_nome">Digite seu nome</string>
+    <string name="login_email">Digite seu e-mail</string>
+    <string name="login_senha">Digite sua senha</string>
     <string name="btn_cadastrar">Cadastrar</string>
     <string name="validacao">Validação</string>
     <string name="btn_validar">Validar</string>
     <string name="txt_validacao">Você recebeu um SMS para validação do seu número, digite o código de validação abaixo:</string>
     <string name="informar_codigo_validacao">Digite o código</string>
+    <string name="btn_logar">Logar</string>
+    <string name="text_cadastre_se">Não tem conta? Cadastre-se</string>
+    <string name="cad_email">Digite seu email</string>
+    <string name="cad_senha">Digite sua senha</string>
+    <string name="title_activity_login">Tela Login</string>
+    <string name="title_activity_cadastro_usuario">Tela Cadastre-se</string>
+
+    <string name="msg_cad_sucesso">Sucesso ao cadastrar usuario</string>
+    <string name="msg_cad_erro">Erro ao cadastrar usuario</string>
 </resources>
