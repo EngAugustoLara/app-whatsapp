@@ -31,7 +31,7 @@
             app:srcCompat="@drawable/logo" />
 
         <EditText
-            android:id="@+id/editEmailId"
+            android:id="@+id/editLoginEmailId"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/imageView2"
@@ -44,7 +44,7 @@
             android:textColor="#ffffff" />
 
         <EditText
-            android:id="@+id/editSenhaId"
+            android:id="@+id/editLoginSenhaId"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -59,7 +59,7 @@
             android:id="@+id/btnLogarId"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editSenhaId"
+            android:layout_below="@+id/editLoginSenhaId"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="27dp"
             android:background="@color/colorPrimaryDark"

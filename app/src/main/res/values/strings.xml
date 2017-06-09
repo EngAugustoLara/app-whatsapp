@@ -17,4 +17,9 @@
 
     <string name="msg_cad_sucesso">Sucesso ao cadastrar usuario</string>
     <string name="msg_cad_erro">Erro ao cadastrar usuario</string>
+
+    <string name="item_configuracoes">Configurações</string>
+    <string name="item_sair">Sair</string>
+    <string name="item_pesquisa">Pesquisar</string>
+    <string name="item_adicionar">Adicionar</string>
 </resources>
